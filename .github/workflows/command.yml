@@ -1,6 +1,6 @@
 name: Workflow Command
 
-on:[worflow_dispatch]
+on: [worflow_dispatch]
 
 jobs: 
   my-job:
