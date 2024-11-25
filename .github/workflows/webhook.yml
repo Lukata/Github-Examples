@@ -5,7 +5,7 @@ on:
     types: [test_result]
 
 jobs:
-  respond-to-dispatch #name
+  respond-to-dispatch: #name
     runs-on: ubuntu-latest
     steps:
       -name: Checkout repo
