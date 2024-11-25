@@ -2,7 +2,7 @@ name: Webhook
 
 on: 
   repository_dispatch
-    types: [webhook]
+    types: [test_result]
 
 jobs:
   respond-to-dispatch #name
