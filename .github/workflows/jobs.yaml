@@ -3,12 +3,13 @@ name: Dep Job example
 on: [workflow_dispatch]
 
 jobs:
-  runs-on: ubuntu-latest
   job1:
+    runs-on: ubuntu-latest
     steps:
       - name: stepA
         run: echo "Hello world"
   job2:
+    runs-on: ubuntu-latest
     steps:
       - name: stepB
         run: echo "Hello Mars"
