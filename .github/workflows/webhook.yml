@@ -1,10 +1,9 @@
-name: "Webhook"
+name: "Webhook Event example"
 
-on: 
+on:
   repository_dispatch:
-    types: 
+    types:
       - webhook
-
 
 jobs:
   respond-to-dispatch:
