@@ -12,12 +12,9 @@ jobs:
           echo "MSG 1"
           echo "MSG 2"
           echo "::endgroup::"
-  second-job-steps:
-    runs-on: ubuntu-latest
-    steps:
       - name: "step 1"
-       run: |
+        run: |
         echo "MY_VAL=hello" >> $GITHUB_ENV
       - name: "step 2"
-       run: |
+        run: |
         echo $MY_VAL
