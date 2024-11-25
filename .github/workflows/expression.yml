@@ -1,0 +1,23 @@
+name: Expression Functions Demo
+
+on:
+  workflow_dispatch:
+    inputs:
+      theString: 
+        description: 'String that will be checked'
+        required: true
+        type: string
+
+jobs:
+  expression-functions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if string contains substring
+        if: contains(${{ input.theString }}, 'llo')
+        run: echo "The string contains the substring."
+      - name: Check if string starts with
+        if: startsWith(${{ input.theString }}, 'He')
+        run: echo "The string starts with 'He'."
+      - name: Check if string ends with
+        if: endsWith(${{ input.theString }}, 'ld')
+        run: echo "The string ends with 'ld'."
