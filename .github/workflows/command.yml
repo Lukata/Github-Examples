@@ -1,0 +1,14 @@
+name: Workflow Command
+
+on:[worflow_dispatch]
+
+jobs: 
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      -name: "group loggins"
+        runs: |
+          echo "::group::My group message"
+          echo: "MSG 1"
+          echo: "MSG 2"
+          echo: "::endgroup::"
