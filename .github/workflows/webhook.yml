@@ -1,4 +1,4 @@
-name: Webhook
+name: "Webhook"
 
 on: 
   repository_dispatch:
